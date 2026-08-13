@@ -1,0 +1,1 @@
+export default function Head(){return <><title>Recovr AI</title><meta name="description" content="Revenue Recovery Intelligence"/><link rel="stylesheet" href="/styles.css"/><link rel="stylesheet" href="/auth.css"/></>}
