@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Recovr AI encontra receita perdida antes que ela desapareça.">
+  <title>Recovr AI — Encontre dinheiro que ficou para trás</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div id="toast" class="toast-root"></div>
+  <section id="landing" class="landing">
+    <nav class="marketing-nav shell">
+      <a class="brand" href="#"><span class="brand-mark">R</span><span>RECOVR</span></a>
+      <div class="nav-actions"><button class="btn ghost" data-action="open-app">Entrar</button><button class="btn primary" data-action="open-app">Ver demonstração</button></div>
+    </nav>
+    <main class="hero shell">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span>Revenue Recovery Intelligence</div>
+        <h1>Quanto dinheiro sua empresa <em>perdeu</em> este mês?</h1>
+        <p>O Recovr cruza contratos, cobranças e atividades para encontrar inadimplência, reajustes esquecidos, renovações em risco, subfaturamento e trabalho fora de escopo.</p>
+        <div class="hero-actions"><button class="btn primary big" data-action="open-app">Abrir Recovr</button><span class="micro">Sem planilha. Sem caça manual.</span></div>
+        <div class="proof-row"><div><strong>7</strong><span>detectores</span></div><div><strong>IA + regras</strong><span>evidência primeiro</span></div><div><strong>R$</strong><span>ROI mensurável</span></div></div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-head"><span>Receita potencialmente perdida</span><span class="live">● AO VIVO</span></div>
+        <div class="hero-money">R$ 18.884</div>
+        <div class="hero-list">
+          <div><span class="dot red"></span><p><strong>Grupo Orbit</strong><small>Renovação em risco</small></p><b>R$ 12.000</b></div>
+          <div><span class="dot red"></span><p><strong>Atlas Digital</strong><small>Pagamento vencido</small></p><b>R$ 3.200</b></div>
+          <div><span class="dot amber"></span><p><strong>Clínica Vita</strong><small>Reajuste não aplicado</small></p><b>R$ 1.184</b></div>
+        </div>
+      </div>
+    </main>
+  </section>
+  <div id="app" class="app hidden">
+    <aside class="sidebar">
+      <div class="side-brand"><span class="brand-mark">R</span><span>RECOVR</span></div>
+      <nav id="sideNav">
+        <button data-view="dashboard" class="active">◫ <span>Visão geral</span></button>
+        <button data-view="findings">◎ <span>Oportunidades</span><i id="navCount">0</i></button>
+        <button data-view="contracts">▤ <span>Contratos</span></button>
+        <button data-view="receivables">◷ <span>A receber</span></button>
+        <button data-view="scope">⌁ <span>Escopo extra</span></button>
+      </nav>
+      <div class="side-foot"><span class="avatar">JB</span><div><strong>Workspace piloto</strong><small id="cloudState">conectando...</small></div></div>
+    </aside>
+    <section class="workspace">
+      <header class="topbar"><button class="mobile-menu" data-action="toggle-nav">☰</button><div><small id="crumb">RECOVR / VISÃO GERAL</small><h2 id="pageTitle">Visão geral</h2></div><div class="top-actions"><button class="btn ghost" data-action="refresh">↻ Atualizar</button><button class="btn primary" data-action="run-analysis">✦ Rodar análise</button></div></header>
+      <main id="content" class="content"><div class="loading-card">Carregando inteligência financeira...</div></main>
+    </section>
+  </div>
+  <div id="modal"></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
