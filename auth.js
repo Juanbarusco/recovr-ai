@@ -33,4 +33,5 @@
     syncFooter();
   },true);
   refresh().then(()=>{if(location.hash==='#app'&&(!state.user||!state.org)){history.replaceState(null,'',location.pathname);state.user?showOnboarding():showAuth('login')}syncFooter()});
+  const ux=document.createElement('script');ux.src='/contract-ux.js';ux.defer=true;document.head.appendChild(ux);
 })();
