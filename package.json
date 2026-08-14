@@ -1,0 +1,9 @@
+{
+  "name": "recovr-ai",
+  "version": "0.7.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.1"
+  }
+}
